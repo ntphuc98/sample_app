@@ -28,4 +28,4 @@ en:
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
-      _title: "|"
+      _title: " | "
