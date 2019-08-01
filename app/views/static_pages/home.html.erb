@@ -1,0 +1,7 @@
+<% provide(:title, t(".title")) %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= t(".paragraph",
+    link_to_railstutotial: link_to(t(".link_text"),
+    "https://www.railstutorial.org/")).html_safe %>
+</p>

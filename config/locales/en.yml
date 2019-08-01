@@ -1,33 +1,31 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      title: "Sample App"
+      paragraph: "This is the home page for the %{link_to_railstutotial} sample application"
+      link_text: "Ruby on Rails Tutorial"
+    help:
+      title: "Help"
+      paragraph: "Get help on the Ruby on Rails Tutorial at the %{link_to_help}.
+        To get help on this sample app, see the %{link_to_book}"
+      link_book_text: "Ruby on Rails Tutorial book"
+      link_help_text: "Rails Tutorial help section"
+    about:
+      title: "About"
+      paragraph: " The %{link_to_tutotial}
+        is a %{link_to_book} and %{link_to_screencast}
+        to teach web development with %{link_to_ror}.
+        This is the sample application for the tutorial."
+      link_tutorial_text: "Ruby on Rails Tutorial"
+      link_screencast_text: "screencast series"
+      link_text: "Ruby on Rails"
+      link_book_text: "book"
+    contact:
+      title: "Contact"
+      paragraph: "Contact the Ruby on Rails Tutorial
+        about the sample app at the %{link_to_contact}."
+      link_contact_text: "contact page"
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+      _title: "|"
