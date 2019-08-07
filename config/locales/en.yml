@@ -35,6 +35,11 @@ en:
       nav_home: "Home"
       nav_help: "Help"
       nav_login: "Log in"
+      nav_logout: "Log out"
+      nav_users: "Users"
+      nav_account: "Account"
+      nav_profile: "Profile"
+      nav_settings: "Settings"
       nav_logo: "sample app"
       logo_text: "logo"
     footer:
@@ -56,6 +61,10 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+      session:
+        email: "Email"
+        password: "Password"
+
   users:
     new:
       title: "Sign up"
@@ -63,3 +72,11 @@ en:
       success_flash: "Welcome to the Sample App!"
     show:
       danger_flash: "User does not exist!"
+  sessions:
+    new:
+      title: "Log in"
+      button_login_text: "Log in"
+      paragraph: "New user? %{linkto_signup}"
+      linkto_signup_text: "Sign up now!"
+    create:
+      danger_flash: "Invalid email/password combination"
