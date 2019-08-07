@@ -1,9 +1,11 @@
 en:
   static_pages:
     home:
-      title: "Sample App"
+      title: "Welcome to the Sample App"
       paragraph: "This is the home page for the %{link_to_railstutotial} sample application"
       link_text: "Ruby on Rails Tutorial"
+      linkto_sigup_text: "Sign up now!"
+      rails_logo_alt: "Rails logo"
     help:
       title: "Help"
       paragraph: "Get help on the Ruby on Rails Tutorial at the %{link_to_help}.
@@ -29,3 +31,20 @@ en:
     application:
       title: "Ruby on Rails Tutorial Sample App"
       _title: " | "
+    header:
+      nav_home: "Home"
+      nav_help: "Help"
+      nav_login: "Log in"
+      nav_logo: "sample app"
+      logo_text: "logo"
+    footer:
+      nav_about: "About"
+      nav_contact: "Contact"
+      nav_new_rails: "News"
+      linkto_michaelhartl_text: "Michael Hartl"
+      linkto_ror_text: "Ruby on Rails Tutorial"
+      paragraph: "The %{linkto_ror} by %{linkto_michaelhart}"
+  users:
+    new:
+      title: "Sign up"
+      paragraph: "This will be a signup page for new users."
