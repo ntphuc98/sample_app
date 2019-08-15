@@ -8,6 +8,8 @@ gem "rails", "~> 5.2.3"
 gem "bcrypt", "3.1.12"
 gem "bootstrap-sass", "3.3.7"
 gem "config"
+gem "jquery-rails", "~> 4.3", ">= 4.3.3"
+gem "rails-ujs", "~> 0.1.0"
 # Use Puma as the app server
 gem "puma", "~> 3.11"
 # Use SCSS for stylesheets
