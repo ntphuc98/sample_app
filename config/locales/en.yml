@@ -76,6 +76,7 @@ en:
     new:
       title: "Log in"
       button_login_text: "Log in"
+      checkbox_text: "Remember me on this computer"
       paragraph: "New user? %{linkto_signup}"
       linkto_signup_text: "Sign up now!"
     create:
