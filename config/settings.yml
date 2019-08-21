@@ -1,3 +1,4 @@
 maximum_name: 50
 maximum_email: 255
 minium_password: 6
+remember_session: "1"
