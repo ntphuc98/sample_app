@@ -64,14 +64,33 @@ en:
       session:
         email: "Email"
         password: "Password"
-
   users:
-    new:
-      title: "Sign up"
-      button_signup_text: "Create my account"
-      success_flash: "Welcome to the Sample App!"
+    index:
+      title: "All users"
+      h1_text: "All users"
+      danger_flash: "User not found!"
     show:
       danger_flash: "User does not exist!"
+    new:
+      title: "Sign up"
+      button_text: "Create my account"
+    create:
+      success_flash: "Welcome to the Sample App!"
+    edit:
+      title: "Edit user"
+      h1_text: "Update your profile"
+      button_text: "Save changes"
+      danger_flash: "Please log in."
+    update:
+      success_flash: "Profile updated"
+      danger_flash: "Please log in."
+    user:
+      delete_text: "delete"
+      confirm_delete: "You sure?"
+      danger_flash: "You are not admin!"
+    destroy:
+      success_flash: "User deleted"
+      danger_flash: "Delete failed"
   sessions:
     new:
       title: "Log in"
