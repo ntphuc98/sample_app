@@ -1,4 +1,6 @@
 en:
+  aplication:
+    danger_flash: "Please log in."
   static_pages:
     home:
       title: "Welcome to the Sample App"
@@ -54,6 +56,15 @@ en:
       danger_text:
         one: "The form contains %{count} error"
         other: "The form contains %{count} errors"
+    user_info:
+      linkto_profile_text: "view my profile"
+      number_of_post:
+        one: "%{count} micropost"
+        other: "%{count} microposts"
+    micropost_form:
+      button_text: "Post"
+      size_picture_alert: "Maximum file size is 5MB. Please choose a smaller file."
+      placeholder: "Compose new micropost..."
   helpers:
     label:
       user:
@@ -72,6 +83,7 @@ en:
       h1_text: "All users"
       danger_flash: "User not found!"
     show:
+      count_mp_text: "Microposts ( %{count} )"
       danger_flash: "User does not exist!"
     new:
       title: "Sign up"
@@ -143,3 +155,12 @@ en:
       success_flash: "Password has been reset."
     danger_expired: "Password reset has expired."
     danger_link: "Error link!"
+  microposts:
+    create:
+      success_flash: "Micropost created!"
+    picture_size_error: "should be less than 5MB"
+    micropost:
+      linkto_delete: "delete"
+      confirm_delete: "You sure?"
+    destroy:
+      success_flash: "Micropost deleted"
