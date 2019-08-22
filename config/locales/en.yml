@@ -64,6 +64,8 @@ en:
       session:
         email: "Email"
         password: "Password"
+      password_reset:
+        email: "Email"
   users:
     index:
       title: "All users"
@@ -95,6 +97,7 @@ en:
   sessions:
     new:
       title: "Log in"
+      forgot_password_text: "(forgot password)"
       button_login_text: "Log in"
       checkbox_text: "Remember me on this computer"
       paragraph: "New user? %{linkto_signup}"
@@ -116,3 +119,27 @@ en:
       linkto_text: "Activate"
       subject_text: "Account activation"
     password_reset:
+      title: "Password reset"
+      paragraph1_text: "To reset your password click the link below:"
+      paragraph2_text: "This link will expire in two hours."
+      paragraph3_text: "If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is."
+      linkto_rp_text: "Reset password"
+      subject_text: "Password reset"
+  password_resets:
+    new:
+      title: "Forgot password"
+      h1_text: "Forgot password"
+      button_text: "Submit"
+    create:
+      info_flash: "Email sent with password reset instructions"
+      danger_flash: "Email address not found"
+    edit:
+      title: "Reset password"
+      h1_text: "Reset password"
+      button_text: "Update password"
+    update:
+      error_password: "can't be empty"
+      success_flash: "Password has been reset."
+    danger_expired: "Password reset has expired."
+    danger_link: "Error link!"
