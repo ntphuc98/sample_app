@@ -76,6 +76,7 @@ en:
       button_text: "Create my account"
     create:
       success_flash: "Welcome to the Sample App!"
+      info_flash: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       h1_text: "Update your profile"
@@ -99,4 +100,19 @@ en:
       paragraph: "New user? %{linkto_signup}"
       linkto_signup_text: "Sign up now!"
     create:
+      warning_flash: "Account not activated.
+        Check your email for the activation link."
       danger_flash: "Invalid email/password combination"
+  account_activations:
+    edit:
+      success_flash: "Account activated!"
+      danger_flash: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      to_text: "Hi %{name},"
+      content_text: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      linkto_text: "Activate"
+      subject_text: "Account activation"
+    password_reset:

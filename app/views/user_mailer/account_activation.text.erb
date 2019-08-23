@@ -1,0 +1,5 @@
+<%= t(".to_text", name: @user.name) %>
+
+<%= t ".content_text" %>
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
