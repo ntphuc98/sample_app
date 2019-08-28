@@ -5,12 +5,14 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page], per_page: Settings.per_page
+    @users = User.paginate page: params[:page],
+      per_page: Settings.per_page_users
   end
 
   def show
     if @user
-      @user
+      @microposts = @user.microposts.paginate page: params[:page],
+       per_page: Settings.per_page_microposts
     else
       flash[:danger] = t ".danger_flash"
       redirect_to root_url
@@ -57,14 +59,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password,
       :password_confirmation)
-  end
-
-  # Confirms a logged-in user.
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".danger_flash"
-    redirect_to login_url
   end
 
   # Confirms the correct user.
