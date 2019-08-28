@@ -5,3 +5,4 @@ remember_session: "1"
 gravatar_size: 50
 default_gravatar_size: 80
 per_page: 10
+expired_time: 2 # hours
